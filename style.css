@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.conteinar {
+  background: #f3f4f8;
+  padding: 25px;
+}
+
+.course_content_one {
+  width: 380px;
+  background: #ffffff;
+  box-shadow: -0.5px -0.5px 4px rgb(182, 151, 151);
+  border-radius: 6px;
+}
+.lessone_one {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  font-family: "Hind", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #6d6e75;
+  margin-top: 0px;
+  padding: 20px;
+}
+.left,
+.right {
+  display: flex;
+  gap: 5px;
+}
+.teacher_name {
+  display: flex;
+  margin-top: -4px;
+  align-items: center;
+  font-family: "Hind", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #6d6e75;
+  line-height: 26px;
+  gap: 15px;
+  padding: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -15px;
+  padding: 20px;
+}
+.sub_tittle {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Hind", sans-serif;
+  padding: 20px;
+  margin-top: -30px;
+  line-height: 1.2;
+}
+.teacher_img {
+  border-radius: 50%;
+}
+.text p {
+  font-size: 20px;
+  color: #b128ff;
+  font-weight: 600;
+  padding-right: 5px;
+  font-family: "Hind", sans-serif;
+}
+.link_btn p {
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 20px;
+  line-height: 26px;
+  font-family: "Hind", sans-serif;
+}
+.link_btn_one {
+  display: flex;
+  align-items: center;
+}
+.content_two {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.text_one p {
+  color: #0fa0dd;
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 5px;
+  font-family: "Hind", sans-serif;
+}
+.text_one del {
+  font-weight: 600;
+  padding-right: 5px;
+  font-size: 14px;
+  color: #6d6e75;
+  text-decoration: line-through;
+  font-family: "Hind", sans-serif;
+}
+.count p {
+  color: #30a820;
+}
+.four p {
+  color: #f2277e;
+}
+.five p {
+  color: #3b60ff;
+}
+.six p {
+  color: #fa7919;
+}
+
+.right i {
+  color: #ff9415;
+}
+.image img {
+  border-radius: 6px 6px 0px 0px;
+}
+.image {
+  position: relative;
+}
+
+.tittle a {
+  position: absolute;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background: #b128ff;
+  padding: 0 10px;
+  border-radius: 4px;
+  top: 21px;
+  left: 21px;
+  font-family: "Hind", sans-serif;
+}
+.Mechanical a {
+  background: #0fa0dd;
+}
+.Development a {
+  background: #30a820;
+}
+.Design a {
+  background: #f2277e;
+}
+.Marketing a {
+  background: #3b60ff;
+}
+.Music a {
+  background: #fa7919;
+}
+.image_section {
+  border: 2px solid #f7f7f7;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0px 4px 11px -5px;
+}
+.course_content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+/* problem solve */
+.content_details_here {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+/* image zoom  */
+
+.image {
+  overflow: hidden;
+}
+.image img {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.image:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .course_content {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .content_two,
+  .courseOne,
+  .courseThree,
+  .coursefour,
+  .coursix,
+  .coursefive,
+  .courseTwo {
+    width: 40%;
+  }
+  .content_two {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 576px) {
+  .course_content {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .courseOne {
+    width: 100%;
+  }
+  .courseTwo {
+    width: 100%;
+  }
+  .courseThree,
+  .coursefour,
+  .coursefive,
+  .coursix {
+    width: 100%;
+  }
+  .content_two {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
